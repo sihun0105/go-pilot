@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
-import "rsc.io/quote"
+func Add(a int, b int) int {
+    return a + b
+}
 
 func main() {
-    fmt.Println(quote.Go())
+    c := Add(1, 2)
+    fmt.Println(c)
 }
