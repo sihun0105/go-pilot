@@ -1,2 +1,0 @@
-# go-pailot
-go-pailot
