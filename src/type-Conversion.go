@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
+
 func main() {
 	var i int = 100
     var u uint = uint(i)
@@ -11,4 +15,6 @@ func main() {
     bytes := []byte(str)
     str2 := string(bytes)
     fmt.Println(bytes, str2)
+
+    fmt.Println(strconv.Itoa(123))
 }

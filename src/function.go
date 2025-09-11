@@ -20,11 +20,23 @@ func f4(params int) (result int) {
     fmt.Println("f4 function", params)
     return params + 1
 }
-
+func f5(a int, f func(int,int)) {
+    f(a, 10)
+}
+func add(a,b int) {
+    fmt.Println(a + b)
+}
+func reference(i *int) {
+    *i = *i + 1
+}
 func main() {
     f1()
     f2(10)
     int_result, string_result := f3()
     fmt.Println(int_result, string_result)
     f4(10)
+    f5(10, add)
+    number := 10
+    reference(&number)
+    fmt.Println("number:", number)
 }
